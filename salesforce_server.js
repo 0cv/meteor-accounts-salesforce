@@ -6,6 +6,6 @@ Accounts.addAutopublishFields({
   // localhost).
   forLoggedInUser: ['services.salesforce'],
   forOtherUsers: [
-    'services.salesforce.id', 'services.salesforce.display_name'
+    'services.salesforce.username'
   ]
 });
