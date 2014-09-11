@@ -3,9 +3,9 @@
   "description": "Login service for Salesforce",
   "homepage": "https://github.com/Krisa/meteor-accounts-salesforce",
   "author": "Christophe Vidal (http://twitter.com/sf_cv)",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "git": "https://github.com/Krisa/meteor-accounts-salesforce.git",
   "packages": {
-    "salesforce": "0.0.1"
+    "salesforce": "0.0.2"
   }
 }
