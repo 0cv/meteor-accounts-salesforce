@@ -8,12 +8,12 @@ Package Dependencies
 
 * accounts-base
 * accounts-oauth
-* salesforce
+* salesforce:salesforce
 
 Install
 -----------
 ```
-mrt install accounts-salesforce
+meteor add salesforce:salesforce
 ```
 
 Configuration
@@ -29,6 +29,3 @@ Meteor.loginWithSalesforce({
 });
 ```
 By default, the scope is just 'api' and the endpoint is production ('login.salesforce.com')
-
-
-```mrt``` is a Meteorite command line tool. Visit [Meteorite's page](http://oortcloud.github.com/meteorite/) to learn more.
