@@ -10,6 +10,7 @@ Package.onUse(function(api) {
   api.versionsFrom('1.2.0');
   
   api.use('accounts-base', ['client', 'server']);
+  api.imply('accounts-base', ['client', 'server']);
   api.use('accounts-oauth', ['client', 'server']);
   api.use('salesforce:salesforce@0.0.1', ['client', 'server']);
 
