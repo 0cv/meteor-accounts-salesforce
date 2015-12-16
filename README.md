@@ -10,11 +10,11 @@ A meteor package for Salesforce's login service.
 * base64
 * http
 * service-configuration
-* salesforce:accounts-salesforce
+* salesforce:salesforce
 
 ### Installation
 ```
-meteor add salesforce:salesforce
+meteor add salesforce:accounts-salesforce
 ```
 
 ### Configuration
