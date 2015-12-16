@@ -1,0 +1,12 @@
+{
+	"public": {
+		"salesforce": {
+			"requestPermissions": ["api", "refresh_token"],
+        	"loginStyle": "popup",
+       		"consumerKey": "Consumer Key from Salesforce connected app"
+		}
+	},
+	"salesforce" : {
+        "consumerSecret": "Consumer Secret from Salesforce connected app"
+    }
+}

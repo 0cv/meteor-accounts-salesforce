@@ -1,0 +1,19 @@
+<head>
+	<title>Salesforce</title>
+</head>
+
+<body>
+	<h1>Sample Salesforce Login with Meteor</h1>
+
+	{{> login}}
+</body>
+
+<template name="login">
+    {{#if currentUser}}
+        {{currentUser.services.salesforce.display_name}} -
+        <button id="logout">Logout</button>
+    {{else}}
+        <button id="salesforce-login" class="btn btn-default">Login with Salesforce</button>
+    {{/if}}
+</template>
+
