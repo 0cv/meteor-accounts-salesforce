@@ -1,7 +1,17 @@
 if (Meteor.isClient) {
+    //handle the "callback" this way if you choose a "redirect" loginStyle:
+    Accounts.onLogin(function(){
+        console.log('Success Login')
+    });
+    Accounts.onLoginFailure(function() {
+        console.log('Failed Login');
+    });
+
+    //buttons binding
     Template.login.events({
         'click #salesforce-login': function(event) {
             Meteor.loginWithSalesforce(function(err) {
+                console.log('callback', arguments);
                 if (err) {
                     throw new Meteor.Error('Salesforce login failed', err);
                 }

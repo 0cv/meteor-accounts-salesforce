@@ -30,7 +30,7 @@ Meteor.loginWithSalesforce(opts, function (err) {
 ```
 `opts` is a fully optional parameter. You may remove it if you don't need it (and put the callback as first parameter)
 
-For the `consumer key` and `consumer secret`, you may call `ServiceConfiguration on the server when the application starts:
+For the `consumer key` and `consumer secret`, you may call `ServiceConfiguration` on the server when the application starts:
 ```javascript
 Meteor.startup(function() {
     ServiceConfiguration.configurations.upsert({
@@ -62,6 +62,17 @@ Finally, instead of having to call `ServiceConfiguration` when the application s
     }
 }
 ```
+
+If the `loginStyle` is `redirect`, the callback of `loginWithSalesforce` is not going to be called. Instead, you may get the result of the login through `Accounts.onLogin` and `Accounts.onLoginFailure`:
+```javascript
+Accounts.onLogin(function(){
+    console.log('Success Login')
+});
+Accounts.onLoginFailure(function() {
+    console.log('Failed Login');
+});
+```
+
 ### Example
 Please have a look at the `example` folder for a very simple login/logout app to Salesforce.
 
