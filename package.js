@@ -12,7 +12,7 @@ Package.onUse(function(api) {
     api.use('accounts-base', ['client', 'server']);
     api.imply('accounts-base', ['client', 'server']);
     api.use('accounts-oauth', ['client', 'server']);
-    api.use('salesforce:salesforce@0.2.0', ['client', 'server']);
+    api.use('salesforce:salesforce@0.2.1', ['client', 'server']);
 
     api.addFiles('salesforce_common.js', ['client', 'server']);
     api.addFiles('salesforce_server.js', 'server');
