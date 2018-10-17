@@ -1,6 +1,6 @@
 Package.describe({
     name: 'salesforce:accounts-salesforce',
-    version: '0.2.0',
+    version: '0.2.1',
     summary: "Accounts service for Salesforce accounts",
     git: 'https://github.com/Krisa/meteor-accounts-salesforce.git',
     documentation: 'README.md'
